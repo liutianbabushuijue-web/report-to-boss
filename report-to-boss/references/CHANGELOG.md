@@ -1,5 +1,10 @@
 # 变更记录
 
+## v1.1.2（2026-09-30）
+
+- 新增分发配套：`.claude-plugin/plugin.json`、`.claude-plugin/marketplace.json`（Claude Code 插件市场一键安装）。
+- README 安装说明扩为四种方式（插件市场 / 手动 / OpenViking / 下载 ZIP）。
+
 ## v1.1.1（2026-09-30）
 
 - 风格放宽：表情符号不强制禁止（书面汇报建议少用；群消息 / 聊天可保留自然语气）。

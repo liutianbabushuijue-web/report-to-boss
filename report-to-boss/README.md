@@ -24,6 +24,9 @@ report-to-boss/
 ├── SKILL.md
 ├── README.md
 ├── LICENSE
+├── .claude-plugin/
+│   ├── plugin.json             # 插件清单（Claude Code 市场用）
+│   └── marketplace.json        # 插件市场配置
 └── references/
     ├── phrasing-templates.md    # 话术模板 + 量化对照
     ├── anti-patterns.md         # 黑名单反例对照
@@ -35,9 +38,31 @@ report-to-boss/
 
 ## 安装 / 使用
 
-- **Claude Code / 通用 agent skill**：把本仓库放进 skills 目录，例如
-  `~/.claude/skills/report-to-boss/`。
-- **OpenViking**：用 `add_skill` 导入本仓库（需 OpenViking 服务可用）。
+### 方式一：Claude Code 插件市场（推荐，一键安装）
+
+1. 添加市场：在 Claude Code 中执行
+   `/plugin marketplace add liutianbabushuijue-web/report-to-boss`
+2. 安装：
+   `/plugin install report-to-boss@report-to-boss-marketplace`
+
+### 方式二：手动安装（任何支持 SKILL.md 的 agent）
+
+把本仓库放进 skills 目录：
+
+- Claude Code：`~/.claude/skills/report-to-boss/`
+- 其他 agent：按其 skills 目录规则放置
+
+### 方式三：OpenViking 一行安装
+
+```
+add_skill(path="https://github.com/liutianbabushuijue-web/report-to-boss")
+```
+
+需 OpenViking 服务可用；同账号跨机器生效。
+
+### 方式四：直接下载
+
+GitHub 页面 Code → Download ZIP，解压后放进上述 skills 目录。
 
 ## License
 

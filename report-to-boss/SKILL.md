@@ -2,7 +2,7 @@
 name: report-to-boss
 description: 向上级汇报的教练。当用户要向上级/老板汇报工作、请示决策、报风险坏消息、述职总结，或想优化汇报话术、避免汇报雷区时使用。核心是把汇报从"告知"变成"交付判断"：结论先行、用数据/事实/案例支撑、带着方案汇报、把成果翻译成领导关心的目标/进度/风险/资源四维度，让老板听完只需点头。
 metadata:
-  version: 1.1.1
+  version: 1.1.2
   glossary: references/glossary.md
   changelog: references/CHANGELOG.md
 ---
